@@ -36,7 +36,7 @@ p {
   padding: 0 30px;
 }
 
-/* Main Navigation Bar  */
+/* Main Navigation Bar > 545px  */
 .navigation-container {
   display: flex;
   justify-content: space-between;
@@ -67,10 +67,6 @@ p {
   font-weight: 600;
 }
 
-.login-logout {
-  margin-right: 30px;
-}
-
 .navigation-container button {
   flex-direction: end;
   margin: 0 10px;
@@ -79,6 +75,7 @@ p {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
+  margin-right: 30px;
 }
 
 /* Main Navigation Bar for Mobile */
@@ -95,7 +92,26 @@ p {
   }
 }
 
-.navigation-container--mobile {
-  position: fixed;
-  bottom: 0;
+@media screen and (max-width: 545px) {
+  .navigation-container--mobile {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: var(--dark);
+  }
+
+  .navigation-container--mobile ul {
+    margin-left: 0px;
+  }
+
+  .nav-link--mobile {
+    margin: 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 20px;
+  }
 }
