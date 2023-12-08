@@ -19,17 +19,17 @@ export default function Navigation() {
           </li>
           <li>
             <Link to="/" className="nav-link">
-              Sales
+              About
             </Link>
           </li>
           <li>
             <Link to="/" className="nav-link">
-              Inventory
+              Contact
             </Link>
           </li>
           <li>
             <Link to="/" className="nav-link">
-              Adjustments
+              Sign Up
             </Link>
           </li>
         </ul>

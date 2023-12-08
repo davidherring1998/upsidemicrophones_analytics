@@ -11,6 +11,7 @@ import Footer from "./layout/Footer";
 import MobileNavigation from "./layout/MobileNavigation";
 import Navigation from "./layout/Navigation";
 import globalSyles from "./styles/globalStyles.css";
+import indexStyles from "./styles/_index.css";
 import "remixicon/fonts/remixicon.css";
 
 export function ErrorBoundry() {
@@ -32,7 +33,12 @@ export function ErrorBoundry() {
   );
 }
 
-export const links = () => [{ rel: "stylesheet", href: globalSyles }];
+export const links = () => {
+  const global = { rel: "stylesheet", href: globalSyles };
+  const index = { rel: "stylesheet", href: indexStyles };
+  return [global, index];
+};
+
 export const meta = () => {
   const description =
     "Upside Microphones analytics website for sales and inventory";
