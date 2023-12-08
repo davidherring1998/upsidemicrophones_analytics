@@ -2,6 +2,7 @@
   --primary: #2c2c2c;
   --light: #fff;
   --dark: #000;
+  --offset: #1F1F1F
   --blue: #000;
   --red: #000;
 }
@@ -29,6 +30,10 @@ ul {
 
 p {
   margin: 0 5px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 .page-container {
@@ -63,12 +68,11 @@ p {
   display: flex;
   justify-content: start;
   align-items: center;
-  /* margin-left: 20px; */
 }
 
 .nav-link {
   margin: 0 10px;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -130,9 +134,91 @@ p {
 }
 
 footer {
-  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 30px;
   color: white;
   border: 1px solid black;
   background-color: var(--dark);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.footer-wrapper--top {
+  display: flex;
+  flex-direction: row;
+  column-gap: 150px;
+  justify-content: space-around;
+  margin-top: 60px;
+  font-size: 16px;
+}
+
+.footer-wrapper--top h3 {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-wrapper--top {
+    column-gap: 75px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer-wrapper--top {
+    column-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-wrapper--top {
+    column-gap: 80px;
+    flex-wrap: wrap;
+    justify-content: start;
+    row-gap: 30px;
+    font-size: 14px;
+  }
+}
+
+.footer-about {
+  max-width: 450px;
+}
+
+.footer-quicklinks ul li a,
+.footer-resources ul li a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-quicklinks ul li a:hover,
+.footer-resources ul li a:hover {
+  color: red;
+}
+
+.footer-quicklinks ul li,
+.footer-resources ul li {
+  margin-bottom: 8px;
+}
+
+.footer-wrapper--bottom{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin: 60px 0 30px 0 ;
+}
+
+.footer-wrapper--bottom p {
+  font-size: 13px;
+}
+
+.footer-icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
 }
