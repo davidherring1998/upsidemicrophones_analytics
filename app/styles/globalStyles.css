@@ -36,6 +36,19 @@ h3 {
   font-size: 20px;
 }
 
+.btn {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--light);
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: var(--primary);
+}
+
 .page-container {
   min-height: 100vw;
   display: grid;

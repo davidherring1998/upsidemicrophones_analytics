@@ -7,13 +7,21 @@ export default function Index() {
     <>
       <div className="content-wrapper">
         <div className="wrapper-upper">
-          <div className="upper-section-one">
-            <button id="btn-demo">Demo Avaliable</button>
-            <h1>Tracking Sales and Inventory Just Got Easier.</h1>
-            <img src={bannerImage} alt="lorem lorem lorem" />
+          <button className="btn" id="btn-demo">
+            Demo Avaliable
+          </button>
+
+          <div className="upper-section--one">
+            <div className="header">
+              <h1>Tracking Sales and Inventory Just Got Easier.</h1>
+            </div>
+
+            <div className="header-img">
+              <img src={bannerImage} alt="lorem lorem lorem" />
+            </div>
           </div>
 
-          <div className="upper-section-two">
+          <div className="upper-section--two">
             <div className="section-two--paragraph">
               <p>
                 Welcome to Upside Analytics - the ultimate e-commerce solution
@@ -23,16 +31,16 @@ export default function Index() {
               </p>
             </div>
 
+            <span className="section-two--line"></span>
+
             <div className="section-two--signup">
               <Form method="POST">
-                <input type="text" name="username" id="banner-signup" />
-                <button type="submit" className="btn" id="btn-banner--signup">
+                <input type="text" name="username" id="input-signup--banner" />
+                <button type="submit" className="btn" id="btn-signup--banner">
                   Sign Up
                 </button>
               </Form>
             </div>
-
-            <span className="section-two--link"></span>
           </div>
         </div>
 
