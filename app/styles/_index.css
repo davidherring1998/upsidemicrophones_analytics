@@ -9,9 +9,10 @@
 }
 
 #btn-demo {
+  grid-area: btn;
   width: 125px;
   padding: 5px;
-  margin-bottom: 20px;
+  margin-bottom: -100px;
   color: var(--offset-white);
   background-color: var(--offset);
   border-radius: 15px 0;
@@ -29,9 +30,10 @@
   padding: 9px;
   margin: 10px 0;
   color: var(--offset-white);
-  background-color: var(--offset);
-  border: 1px solid rgba(255, 0, 0, 0.3);
+  background-color: var(--blue);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 14px;
+  border-radius: 5px;
 }
 
 #btn-signup--banner:hover {
@@ -40,22 +42,20 @@
 }
 
 .content-wrapper {
-  max-width: 2000px;
-  justify-content: center;
   display: grid;
-  gap: 50px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .wrapper-upper {
   margin: 0 auto;
   display: flex;
-  row-gap: 0;
   flex-direction: column;
+  row-gap: 100px;
   padding: 30px;
-  height: 425px;
+  height: 435px;
   color: var(--light);
   background-color: var(--dark);
-  border-radius: 5px;
   box-shadow: 8px 2px 7px var(--offset), -8px -0 7px var(--offset);
 }
 
@@ -64,6 +64,67 @@
   display: flex;
   max-width: 1000px;
   margin: 0 30px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  max-width: 700px;
+  margin-right: -60px;
+  margin-top: 15px;
+}
+
+.header-img {
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  margin-right: -35px;
+}
+
+.header-img img {
+  height: 300px;
+  margin-top: -55px;
+}
+
+.upper-section--two {
+  margin-top: 30px;
+}
+
+.section-two--paragraph {
+  grid-area: paragraph;
+  max-width: 600px;
+}
+
+.section-two--paragraph p {
+  max-width: 700px;
+}
+
+.section-two--signup {
+  grid-area: signup;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+#input-signup--banner {
+  width: 100%;
+  padding: 9px 0;
+  background-color: var(--light);
+  border: 1px solid;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-color: rgba(255, 255, 0, 0.2);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1130px) {
+  .header {
+    margin-right: -65px;
+  }
 }
 
 @media screen and (min-width: 975px) {
@@ -78,51 +139,66 @@
   }
 }
 
-.header {
-  display: flex;
-  align-items: start;
-  font-size: 24px;
-  max-width: 700px;
-  margin-right: -60px;
-}
-
-@media screen and (min-width: 1130px) {
-  .header {
-    margin-right: -65px;
+@media screen and (max-width: 949px) {
+  .upper-section--one {
+    grid-area: none;
   }
 }
 
-.header-img {
-  display: flex;
-  align-items: center;
-  height: 200px;
-  margin-right: -40px;
+@media screen and (max-width: 849px) {
+  .wrapper-upper {
+    height: fit-content;
+    margin: 0 30px;
+    flex-wrap: wrap;
+  }
+
+  .header-img img {
+    display: none;
+  }
+
+  .header h1 {
+    max-width: 500px;
+  }
+
+  .section-two--paragraph {
+    margin-right: 15px;
+  }
 }
 
-.header-img img {
-  height: 300px;
-  margin-top: -105px;
+@media screen and (max-width: 649px) {
+  .content {
+    padding: 15px;
+  }
+
+  .wrapper-upper {
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+
+  .header {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: -30px;
+  }
+
+  .upper-section--two {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .section-two--signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
 }
 
-.section-two--paragraph {
-  max-width: 600px;
+@media screen and (max-width: 424px) {
+  .header {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
 }
 
-.section-two--paragraph p {
-  max-width: 700px;
-}
-
-.section-two--signup {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 300px;
-}
-
-#input-signup--banner {
-  width: 100%;
-  padding: 9px 0;
-  background-color: var(--primary);
-  color: var(--light);
-  border: none;
-}
+/* Feature section */

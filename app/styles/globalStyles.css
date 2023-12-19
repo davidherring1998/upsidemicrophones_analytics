@@ -60,11 +60,6 @@ h3 {
   padding: 0 30px;
 }
 
-.wapper-upper {
-  display: grid;
-  grid-gap: 30px;
-}
-
 /* Main Navigation Bar > 545px  */
 .navigation-container {
   display: flex;
@@ -125,10 +120,10 @@ h3 {
     position: fixed;
     display: flex;
     justify-content: space-around;
-    width: 100vw;
     bottom: 0;
     margin-bottom: 0;
-    background-color: var(--blue);
+    width: 100vw;
+    background-color: var(--offset);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
   }
 
@@ -232,5 +227,3 @@ footer {
   align-items: center;
   column-gap: 30px;
 }
-
-/* Location: _index.jsx - Endpoint : "/" */
