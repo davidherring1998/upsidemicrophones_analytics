@@ -99,7 +99,7 @@ export default function MobileNavigation() {
           </li>
           <li>
             <Link to="/" className="nav-link--mobile">
-              <i class="ri-price-tag-3-fill">
+              <i className="ri-price-tag-3-fill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ export default function MobileNavigation() {
           </li>
           <li>
             <Link to="/" className="nav-link--mobile">
-              <i class="ri-contacts-book-fill">
+              <i className="ri-contacts-book-fill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -133,7 +133,7 @@ export default function MobileNavigation() {
           </li>
           <li>
             <Link to="/" className="nav-link--mobile">
-              <i class="ri-question-answer-fill">
+              <i className="ri-question-answer-fill">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

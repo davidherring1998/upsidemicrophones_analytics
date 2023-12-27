@@ -4,7 +4,6 @@
   --dark: #000;
   --offset: #1f1f1f;
   --blue: #6564db;
-  --red: red;
   --offset-white: rgba(255, 255, 255, 0.8);
 }
 
@@ -28,12 +27,12 @@
 
 #btn-signup--banner {
   width: 100%;
-  padding: 9px;
+  padding: 10px;
   margin: 10px 0;
   color: var(--offset-white);
   background-color: var(--blue);
-  border: 1px solid #ffffff33;
   font-size: 14px;
+  border: 1px solid #ffffff33;
   border-radius: 5px;
 }
 
@@ -44,9 +43,9 @@
 
 /* Main wrapper */
 .content-wrapper {
+  max-width: 1500px;
   display: grid;
   justify-content: center;
-  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -155,6 +154,7 @@
   border-radius: 5px;
 }
 
+/* Min */
 @media screen and (min-width: 1135px) {
   .header {
     margin-right: -65px;
@@ -164,6 +164,14 @@
 @media screen and (min-width: 975px) {
   .upper-section--one {
     margin-bottom: -30px;
+  }
+}
+
+/* Max */
+@media screen and (max-width: 1149px) {
+  .wrapper-upper {
+    box-shadow: 10px 0 10px rgba(255, 255, 255, 0.1),
+      -10px 0 10px rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -254,9 +262,9 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-top: 15px;
   border-radius: 15px;
 }
@@ -284,14 +292,14 @@ h3 {
 }
 
 .features {
-  padding: 15px 30px;
   width: 180px;
+  padding: 15px 30px;
 }
 
 @media screen and (max-width: 350px) {
   .features {
-    padding: 5px 15px;
     width: 150px;
+    padding: 5px 15px;
     margin: 0;
   }
 }
@@ -307,15 +315,22 @@ h3 {
   }
 
   .features {
-    background-color: rgba(31, 31, 31, 0.8);
     width: 90%;
-    margin: 15px;
-    padding-top: 25px;
-    height: 175px;
+    height: 200px;
+    margin: 7.5px;
+    padding-top: 45px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 4px 5px 10px var(--offset), -10px 0 10px var(--dark);
+
     background-color: rgba(31, 31, 31, 1);
+  }
+
+  .feature-left {
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.1), -10px 0 10px var(--dark);
+  }
+
+  .feature-right {
+    box-shadow: 10px 0 10px var(--dark), 1px 1px 20px rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -343,12 +358,16 @@ h3 {
   font-size: 16px;
 }
 
+.wrapper-features--right---large div {
+  box-shadow: 10px 0 10px var(--dark), 1px 1px 20px rgba(255, 255, 255, 0.1);
+}
+
 .feature-large {
   height: 100%;
   margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  box-shadow: 4px 5px 10px var(--offset), -10px 0 10px var(--dark);
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.1), -10px 0 10px var(--dark);
   background-color: rgba(31, 31, 31, 1);
 }
 
@@ -367,32 +386,6 @@ h3 {
   margin-top: 30px;
 }
 
-.sections {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-  padding: 30px;
-  color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  box-shadow: 4px 5px 10px var(--offset), -10px 0 10px var(--dark);
-  background-color: var(--dark);
-}
-
-.section img {
-  margin: 0 auto;
-}
-
-.section h3 {
-  margin: 15px 0;
-  font-size: 16px;
-}
-
 .wrapper-middle--header {
   text-align: center;
 }
@@ -406,5 +399,54 @@ h3 {
   margin-top: 15px;
   margin-bottom: 15px;
   color: var(--light);
-  font-size: 24px;
+  font-size: 32px;
 }
+
+.sections {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--dark);
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.1), 8px 0 15px var(--dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+.section img {
+  margin: 0 auto;
+}
+
+.section h3 {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.section-one {
+  box-shadow: 2px 0 10px rgba(255, 255, 255, 0.1), -8px -0 7px var(--offset);
+}
+
+.section-two {
+  box-shadow: 2px 0 10px rgba(255, 255, 255, 0.1),
+    -2px 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.section-three {
+  box-shadow: 8px -0 7px var(--offset), 2px 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 889px) {
+  .section {
+    box-shadow: 10px 0 10px rgba(255, 255, 255, 0.1),
+      -10px 0 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* box-shadow: 10px 0 10px rgba(255, 255, 255, 0.1), -10px 0 10px rgba(255, 255, 255, 0.1); */

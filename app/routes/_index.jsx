@@ -5,6 +5,9 @@ import featureOneImg from "../../public/feature_one_img.png";
 import featureTwoImg from "../../public/feature_two_img.png";
 import featureThreeImg from "../../public/feature_three_img.png";
 import featureFourImg from "../../public/feature_four_img.png";
+import sectioneOneImg from "../../public/section_one_img.png";
+import sectioneTwoImg from "../../public/section_two_img.png";
+import sectioneThreeImg from "../../public/section_three_img.png";
 
 import { useRef } from "react";
 
@@ -60,24 +63,24 @@ export default function Index() {
         {/* Render for mobile < 1150px */}
         <div className="wrapper-features--mobile">
           <div className="wrapper-features--left">
-            <div className="features feature-one">
+            <div className="features feature-one feature-left">
               <img src={featureOneImg} alt="Sales projection graph. " />
               <h3>Measure Development</h3>
             </div>
 
-            <div className="features feature-two">
+            <div className="features feature-two feature-right">
               <img src={featureTwoImg} alt="Inventory managment clipboard." />
               <h3>Monitor Inventory</h3>
             </div>
           </div>
 
           <div className="wrapper-features--right">
-            <div className="features feature-three">
+            <div className="features feature-three feature-left">
               <img src={featureThreeImg} alt="Hand holding a bag of money." />
               <h3>Increase Conversions</h3>
             </div>
 
-            <div className="features feature-four">
+            <div className="features feature-four feature-right">
               <img
                 src={featureFourImg}
                 alt="Two animated people planing a marketing statergy."
@@ -123,44 +126,37 @@ export default function Index() {
 
           <div className="sections">
             <div className="section-one section">
-              <img src={featureFourImg} alt="Hand holding a bag of money." />
+              <img src={sectioneOneImg} alt="Hand holding a bag of money." />
 
               <h3>Your All-In-One Solution</h3>
               <p>
-                This inventory management software skillfully manages every
-                facet of sales processes, allowing for the manual entry of sales
-                information from various platforms. It simplifies tasks ranging
-                from monitoring growth, createing marketing goals, and tracking
-                inventory!
+                Efficiently manage sales facets with our inventory software.
+                Enter sales data manually from any platform, monitor growth,
+                create marketing goals, and track inventory seamlessly.
               </p>
             </div>
 
             <div className="section-two section">
-              <img src={featureFourImg} alt="Hand holding a bag of money." />
+              <img src={sectioneTwoImg} alt="Hand holding a bag of money." />
 
-              <h3>Create and Set Marketing Goals</h3>
+              <h3>Set Your Marketing Goals with Precision</h3>
               <p>
-                This inventory management software skillfully manages every
-                facet of sales processes, allowing for the manual entry of sales
-                information from various platforms. It simplifies tasks ranging
-                from monitoring growth, createing marketing goals, and tracking
-                inventory!
+                Unveil the full potential of your marketing strategy with
+                targeted goal setting. Upside Analytics equips you with the
+                tools to establish clear, measurable, and attainable marketing
+                objectives.
               </p>
             </div>
 
             <div className="section-three section">
-              <img src={featureFourImg} alt="Hand holding a bag of money." />
+              <img src={sectioneThreeImg} alt="Hand holding a bag of money." />
               <h3>Measure your businesses Growth</h3>
               <p>
-                This inventory management software skillfully manages every
-                facet of sales processes, allowing for the manual entry of sales
-                information from various platforms. It simplifies tasks ranging
-                from monitoring growth, createing marketing goals, and tracking
-                inventory!
+                Track and measure your business growth effectively with Upside
+                Analytics. Gain insights into sales trends, customer behavior,
+                and market dynamics for strategic decision-making.
               </p>
             </div>
-
-
           </div>
         </div>
       </div>
