@@ -4,7 +4,7 @@
   --dark: #000;
   --offset: #1f1f1f;
   --blue: #6564db;
-  --red: #000;
+  --red: red;
 }
 
 * {
@@ -52,7 +52,6 @@ h3 {
 .page-container {
   min-height: 100vw;
   display: grid;
-  grid-template-rows: auto 2fr 0.5fr;
   grid-template-columns: 100%;
 }
 
@@ -72,10 +71,9 @@ h3 {
 }
 
 @media screen and (max-width: 549px) {
-  .navigation-container{
+  .navigation-container {
     margin-bottom: 0;
   }
-  
 }
 
 #nav-logo {
@@ -97,9 +95,20 @@ h3 {
   font-weight: 600;
 }
 
+#nav-link--highlight {
+  color: var(--light);
+  background-color: var(--red);
+  padding: 10px 15px;
+  margin-left: -10px;
+}
+
+#btn-signin {
+  color: var(--red);
+}
+
 .navigation-container button {
   flex-direction: end;
-  margin: 0 10px;
+  margin: 0;
   background-color: var(--light);
   border: none;
   font-size: 14px;

@@ -6,6 +6,8 @@ import featureTwoImg from "../../public/feature_two_img.png";
 import featureThreeImg from "../../public/feature_three_img.png";
 import featureFourImg from "../../public/feature_four_img.png";
 
+import { useRef } from "react";
+
 export default function Index() {
   return (
     <>
@@ -60,12 +62,12 @@ export default function Index() {
           <div className="wrapper-features--left">
             <div className="features feature-one">
               <img src={featureOneImg} alt="Sales projection graph. " />
-              <h3>Track Sales Growth</h3>
+              <h3>Measure Development</h3>
             </div>
 
             <div className="features feature-two">
               <img src={featureTwoImg} alt="Inventory managment clipboard." />
-              <h3>Manage Inventory</h3>
+              <h3>Monitor Inventory</h3>
             </div>
           </div>
 
@@ -80,7 +82,7 @@ export default function Index() {
                 src={featureFourImg}
                 alt="Two animated people planing a marketing statergy."
               />
-              <h3>Build Marketing Strategy</h3>
+              <h3>Strategize Marketing</h3>
             </div>
           </div>
         </div>
@@ -94,26 +96,73 @@ export default function Index() {
 
           <div className="features feature-large large">
             <img src={featureTwoImg} alt="Inventory managment clipboard." />
-            <h3>Manage Inventory</h3>
+            <h3>Monitor Inventory </h3>
           </div>
         </div>
 
         <div className="wrapper-features--right wrapper-features--right---large large">
           <div className="features feature-large large large-row">
-            <img src={featureThreeImg} alt="Hand holding a bag of money." />
+            <img src={featureFourImg} alt="Hand holding a bag of money." />
             <h3>Increase Conversions</h3>
           </div>
 
           <div className="features feature-large large">
             <img
-              src={featureFourImg}
+              src={featureThreeImg}
               alt="Two animated people planing a marketing statergy."
             />
             <h3>Strategize Marketing</h3>
           </div>
         </div>
 
-        <div className="wrapper-middle"></div>
+        <div className="wrapper-middle">
+          <div className="wrapper-middle--header">
+            <span>IT'S TIME TO START THE RIGHT WAY</span>
+            <h2>Revolutionize Your Inventory Management Approach</h2>
+          </div>
+
+          <div className="sections">
+            <div className="section-one section">
+              <img src={featureFourImg} alt="Hand holding a bag of money." />
+
+              <h3>Your All-In-One Solution</h3>
+              <p>
+                This inventory management software skillfully manages every
+                facet of sales processes, allowing for the manual entry of sales
+                information from various platforms. It simplifies tasks ranging
+                from monitoring growth, createing marketing goals, and tracking
+                inventory!
+              </p>
+            </div>
+
+            <div className="section-two section">
+              <img src={featureFourImg} alt="Hand holding a bag of money." />
+
+              <h3>Create and Set Marketing Goals</h3>
+              <p>
+                This inventory management software skillfully manages every
+                facet of sales processes, allowing for the manual entry of sales
+                information from various platforms. It simplifies tasks ranging
+                from monitoring growth, createing marketing goals, and tracking
+                inventory!
+              </p>
+            </div>
+
+            <div className="section-three section">
+              <img src={featureFourImg} alt="Hand holding a bag of money." />
+              <h3>Measure your businesses Growth</h3>
+              <p>
+                This inventory management software skillfully manages every
+                facet of sales processes, allowing for the manual entry of sales
+                information from various platforms. It simplifies tasks ranging
+                from monitoring growth, createing marketing goals, and tracking
+                inventory!
+              </p>
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </>
   );

@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="footer-wrapper--top">
             <div className="footer-about">
               <h3>About</h3>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-              voluptatum atque magnam consequuntur fuga quaerat facilis soluta,
-              temporibus possimus ipsum saepe, quam nostrum repudiandae numquam
-              tempora impedit. Nemo, natus vel.
+              Your Premier E-Commerce Partner for Comprehensive Inventory and
+              Sales Management | Experience Effortless Tracking Across All
+              Platforms | Stay Ahead, Stay Informed, Stay on Top with Upside
+              Analytics.
             </div>
 
             <div className="footer-quicklinks">

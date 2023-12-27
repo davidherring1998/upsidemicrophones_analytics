@@ -27,15 +27,15 @@ export default function Navigation() {
               Contact
             </Link>
           </li>
-          <li>
-            <Link to="/" className="nav-link">
-              Sign Up
-            </Link>
-          </li>
         </ul>
         <div>
           <button>
-            <Link to="/">Login</Link>
+            <Link to="/" id="btn-signin">Sign In</Link>
+          </button>
+          <button>
+            <Link to="/" id="nav-link--highlight">
+              Sign Up
+            </Link>
           </button>
         </div>
       </div>
