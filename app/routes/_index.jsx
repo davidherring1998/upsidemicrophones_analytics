@@ -1,6 +1,10 @@
 import { Form } from "@remix-run/react";
 
 import bannerImage from "../../public/banner-image.png";
+import featureOneImg from "../../public/feature_one_img.png";
+import featureTwoImg from "../../public/feature_two_img.png";
+import featureThreeImg from "../../public/feature_three_img.png";
+import featureFourImg from "../../public/feature_four_img.png";
 
 export default function Index() {
   return (
@@ -51,12 +55,61 @@ export default function Index() {
           </div>
         </div>
 
-        <div className="wrapper-features">
-          <div className="inner-wrapper--features">
-            <div className="feature-one">Imagine this is a icon..</div>
-            <div className="feature-two">Imagine this is a icon..</div>
-            <div className="feature-three">Imagine this is a icon..</div>
-            <div className="feature-four">Imagine this is a icon..</div>
+        {/* Render for mobile < 1150px */}
+        <div className="wrapper-features--mobile">
+          <div className="wrapper-features--left">
+            <div className="features feature-one">
+              <img src={featureOneImg} alt="Sales projection graph. " />
+              <h3>Track Sales Growth</h3>
+            </div>
+
+            <div className="features feature-two">
+              <img src={featureTwoImg} alt="Inventory managment clipboard." />
+              <h3>Manage Inventory</h3>
+            </div>
+          </div>
+
+          <div className="wrapper-features--right">
+            <div className="features feature-three">
+              <img src={featureThreeImg} alt="Hand holding a bag of money." />
+              <h3>Increase Conversions</h3>
+            </div>
+
+            <div className="features feature-four">
+              <img
+                src={featureFourImg}
+                alt="Two animated people planing a marketing statergy."
+              />
+              <h3>Build Marketing Strategy</h3>
+            </div>
+          </div>
+        </div>
+
+        {/* Render for > 1150px */}
+        <div className="wrapper-features--left wrapper-features--left---large large ">
+          <div className="features feature-large large large-row">
+            <img src={featureOneImg} alt="Sales projection graph. " />
+            <h3>Measure Development</h3>
+          </div>
+
+          <div className="features feature-large large">
+            <img src={featureTwoImg} alt="Inventory managment clipboard." />
+            <h3>Manage Inventory</h3>
+          </div>
+        </div>
+
+        <div className="wrapper-features--right wrapper-features--right---large large">
+          <div className="features feature-large large large-row">
+            <img src={featureThreeImg} alt="Hand holding a bag of money." />
+            <h3>Increase Conversions</h3>
+          </div>
+
+          <div className="features feature-large large">
+            <img
+              src={featureFourImg}
+              alt="Two animated people planing a marketing statergy."
+            />
+            <h3>Strategize Marketing</h3>
           </div>
         </div>
 

@@ -71,6 +71,13 @@ h3 {
   background-color: var(--light);
 }
 
+@media screen and (max-width: 549px) {
+  .navigation-container{
+    margin-bottom: 0;
+  }
+  
+}
+
 #nav-logo {
   height: 90px;
   width: 90px;

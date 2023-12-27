@@ -4,7 +4,7 @@ import { Link } from "@remix-run/react";
 export default function MobileNavigation() {
   return (
     <>
-      <div className="navigation-container navigation-container--mobile">
+      {/* <div className="navigation-container navigation-container--mobile">
         <ul>
           <li>
             <Link to="/" className="nav-link--mobile ">
@@ -75,7 +75,7 @@ export default function MobileNavigation() {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 }
