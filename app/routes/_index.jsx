@@ -9,8 +9,6 @@ import sectioneOneImg from "../../public/section_one_img.png";
 import sectioneTwoImg from "../../public/section_two_img.png";
 import sectioneThreeImg from "../../public/section_three_img.png";
 
-import { useRef } from "react";
-
 export default function Index() {
   return (
     <>
@@ -70,7 +68,7 @@ export default function Index() {
 
             <div className="features feature-two feature-right">
               <img src={featureTwoImg} alt="Inventory managment clipboard." />
-              <h3>Monitor Inventory</h3>
+              <h3>Monitor Inventory Status</h3>
             </div>
           </div>
 
@@ -85,7 +83,7 @@ export default function Index() {
                 src={featureFourImg}
                 alt="Two animated people planing a marketing statergy."
               />
-              <h3>Strategize Marketing</h3>
+              <h3>Strategize Marketing Plans</h3>
             </div>
           </div>
         </div>
@@ -119,45 +117,61 @@ export default function Index() {
         </div>
 
         <div className="wrapper-middle">
-          <div className="wrapper-middle--header">
-            <span>IT'S TIME TO START THE RIGHT WAY</span>
-            <h2>Revolutionize Your Inventory Management Approach</h2>
+          <div className="wrapper-sections">
+            <div className="header-middle">
+              <span>IT'S TIME TO START THE RIGHT WAY</span>
+              <h2>Revolutionize Your Inventory Management Approach</h2>
+            </div>
+
+            <div className="sections">
+              <div className="section-one section">
+                <img src={sectioneOneImg} alt="Hand holding a bag of money." />
+
+                <h3>Your All-In-One Solution</h3>
+                <p>
+                  Efficiently manage sales facets with our inventory software.
+                  Enter sales data manually from any platform, monitor growth,
+                  create marketing goals, and track inventory seamlessly.
+                </p>
+              </div>
+
+              <div className="section-two section">
+                <img src={sectioneTwoImg} alt="Hand holding a bag of money." />
+
+                <h3>Set Your Marketing Goals with Precision</h3>
+                <p>
+                  Unveil the full potential of your marketing strategy with
+                  targeted goal setting. Upside Analytics equips you with the
+                  tools to establish clear, measurable, and attainable marketing
+                  objectives.
+                </p>
+              </div>
+
+              <div className="section-three section">
+                <img
+                  src={sectioneThreeImg}
+                  alt="Hand holding a bag of money."
+                />
+                <h3>Measure your businesses Growth</h3>
+                <p>
+                  Track and measure your business growth effectively with Upside
+                  Analytics. Gain insights into sales trends, customer behavior,
+                  and market dynamics for strategic decision-making.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="sections">
-            <div className="section-one section">
-              <img src={sectioneOneImg} alt="Hand holding a bag of money." />
+          <div className="wapper-customer--card"></div>
 
-              <h3>Your All-In-One Solution</h3>
-              <p>
-                Efficiently manage sales facets with our inventory software.
-                Enter sales data manually from any platform, monitor growth,
-                create marketing goals, and track inventory seamlessly.
-              </p>
+          {/* <div className="wrapper-keynotes">
+            <div className="keynote keynote-one">
+              <h2 className="header-h2 header-keynote">
+                Monitor Your Business's Inventory
+              </h2>
+              <span></span>
             </div>
-
-            <div className="section-two section">
-              <img src={sectioneTwoImg} alt="Hand holding a bag of money." />
-
-              <h3>Set Your Marketing Goals with Precision</h3>
-              <p>
-                Unveil the full potential of your marketing strategy with
-                targeted goal setting. Upside Analytics equips you with the
-                tools to establish clear, measurable, and attainable marketing
-                objectives.
-              </p>
-            </div>
-
-            <div className="section-three section">
-              <img src={sectioneThreeImg} alt="Hand holding a bag of money." />
-              <h3>Measure your businesses Growth</h3>
-              <p>
-                Track and measure your business growth effectively with Upside
-                Analytics. Gain insights into sales trends, customer behavior,
-                and market dynamics for strategic decision-making.
-              </p>
-            </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

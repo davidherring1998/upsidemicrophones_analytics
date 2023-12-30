@@ -5,6 +5,7 @@
   --offset: #1f1f1f;
   --blue: #6564db;
   --offset-white: rgba(255, 255, 255, 0.8);
+  --red: rgb(255, 0, 0);
 }
 
 /* Buttons */
@@ -21,7 +22,7 @@
 }
 
 #btn-demo:hover {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.1);
   border-color: gba(255, 255, 255, 0.2);
 }
 
@@ -37,7 +38,7 @@
 }
 
 #btn-signup--banner:hover {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: var(--red);
   border-color: gba(255, 255, 255, 0.2);
 }
 
@@ -185,6 +186,7 @@
   .wrapper-upper {
     height: fit-content;
     flex-wrap: wrap;
+    margin-bottom: 15px;
   }
 
   .header-img img {
@@ -386,16 +388,17 @@ h3 {
   margin-top: 30px;
 }
 
-.wrapper-middle--header {
+.header-middle {
   text-align: center;
 }
 
-.wrapper-middle--header span {
+.header-middle span {
   color: rgba(255, 0, 0, 0.7);
   font-weight: 900;
 }
 
-.wrapper-middle--header h2 {
+.header-middle h2,
+.header-h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   color: var(--light);
@@ -449,4 +452,3 @@ h3 {
   }
 }
 
-/* box-shadow: 10px 0 10px rgba(255, 255, 255, 0.1), -10px 0 10px rgba(255, 255, 255, 0.1); */

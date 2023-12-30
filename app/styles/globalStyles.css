@@ -59,6 +59,37 @@ h3 {
   padding: 0 30px;
 }
 
+@media screen and (min-width: 1700px) {
+  .content {
+    margin-top: -50px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  .content {
+    margin-top: -100px;
+  }
+}
+@media screen and (min-width: 1950px) {
+  .content {
+    margin-top: -150px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .content {
+    margin-top: -200px;
+  }
+}
+@media screen and (min-width: 2150px) {
+  .content {
+    margin-top: -250px;
+  }
+}
+@media screen and (min-width: 2350px) {
+  .content {
+    margin-top: -375px;
+  }
+}
+
 /* Main Navigation Bar > 545px  */
 .navigation-container {
   display: flex;
@@ -100,6 +131,7 @@ h3 {
   background-color: var(--red);
   padding: 10px 15px;
   margin-left: -10px;
+  border-radius: 5px;
 }
 
 #btn-signin {
