@@ -21,7 +21,7 @@ export default function Index() {
 
             <div className="upper-section--one">
               <div className="header">
-                <h1>Tracking Sales and Inventory Just Got Easier.</h1>
+                <h1>Growing Sales and Tracking Inventory Just Got Easier.</h1>
               </div>
 
               <div className="header-img">
@@ -33,10 +33,10 @@ export default function Index() {
               <div className="section-two--paragraph">
                 <p>
                   Welcome to Upside Analytics - the ultimate e-commerce solution
-                  for seamlessly tracking your inventory and sales manually
-                  across any platform.With Upside Analytics, you gain the power
-                  to monitor your entire inventory and sales activities
-                  effortlessly.
+                  for seamlessly measuring growth, tracking inventory, and
+                  creating marketing statageys. With Upside Analytics, you gain
+                  the power to monitor your entire inventory and sales
+                  activities effortlessly.
                 </p>
               </div>
 
@@ -162,16 +162,43 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="wapper-customer--card"></div>
+          <div className="header-steps header-middle">
+            <h2>So, How Do You Start? </h2>
+          </div>
 
-          {/* <div className="wrapper-keynotes">
-            <div className="keynote keynote-one">
-              <h2 className="header-h2 header-keynote">
-                Monitor Your Business's Inventory
-              </h2>
-              <span></span>
+          <div className="wrapper-steps">
+            <div className="step-one step">
+              <h3>Step One: </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                consequatur odio veritatis error quam omnis nisi fugit, numquam,
+                rem autem, illo corrupti voluptatum reiciendis modi porro!
+                Voluptates adipisci exercitationem sit.
+              </p>
             </div>
-          </div> */}
+
+            <div className="step-two step">
+              <h3>Step Two: </h3>
+              <p>
+                LTwom ipsum dolor sit amet consectetur adipisicing elit. Atque
+                consequatur odio veritatis error quam omnis nisi fugit, numquam,
+                rem autem, illo corrupti voluptatum reiciendis modi porro!
+                Voluptates adipisci exercitationem sit.
+              </p>
+            </div>
+
+            <div className="step-three step">
+              <h3>Step Three:</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                consequatur odio veritatis error quam omnis nisi fugit, numquam,
+                rem autem, illo corrupti voluptatum reiciendis modi porro!
+                Voluptates adipisci exercitationem sit.
+              </p>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </>

@@ -323,7 +323,6 @@ h3 {
     padding-top: 45px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-
     background-color: rgba(31, 31, 31, 1);
   }
 
@@ -405,6 +404,8 @@ h3 {
   font-size: 32px;
 }
 
+/* sections */
+
 .sections {
   display: grid;
   column-gap: 30px;
@@ -452,3 +453,27 @@ h3 {
   }
 }
 
+/* steps */
+.wrapper-steps {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 15px;
+
+}
+
+.wrapper-steps h3{
+  font-size: 18px;
+}
+
+.header-steps{
+  margin-bottom: -45px;
+  text-align: start;
+}
+
+.step {
+  border: 1px solid yellow;
+}
