@@ -120,18 +120,18 @@ export default function Index() {
           <div className="wrapper-sections">
             <div className="header-middle">
               <span>IT'S TIME TO START THE RIGHT WAY</span>
-              <h2>Revolutionize Your Inventory Management Approach</h2>
+              <h2>Revolutionize E-commerce Approach</h2>
             </div>
 
             <div className="sections">
               <div className="section-one section">
                 <img src={sectioneOneImg} alt="Hand holding a bag of money." />
 
-                <h3>Your All-In-One Solution</h3>
+                <h3>Your All-In-One E-Commerce Solution</h3>
                 <p>
                   Efficiently manage sales facets with our inventory software.
                   Enter sales data manually from any platform, monitor growth,
-                  create marketing goals, and track inventory seamlessly.
+                  create marketing goals, and manage inventory seamlessly.
                 </p>
               </div>
 
@@ -152,7 +152,7 @@ export default function Index() {
                   src={sectioneThreeImg}
                   alt="Hand holding a bag of money."
                 />
-                <h3>Measure your businesses Growth</h3>
+                <h3>Set & Measure your businesses Growth</h3>
                 <p>
                   Track and measure your business growth effectively with Upside
                   Analytics. Gain insights into sales trends, customer behavior,
@@ -162,43 +162,55 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="header-steps header-middle">
-            <h2>So, How Do You Start? </h2>
+          <div className=" header-middle" id="header-steps">
+            <h2>So, How Do I Start? </h2>
           </div>
 
           <div className="wrapper-steps">
             <div className="step-one step">
-              <h3>Step One: </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                consequatur odio veritatis error quam omnis nisi fugit, numquam,
-                rem autem, illo corrupti voluptatum reiciendis modi porro!
-                Voluptates adipisci exercitationem sit.
-              </p>
+              <h4>#1</h4>
+
+              <div className="step-innner">
+                <h3>Sign Up - It’s Absolutely Free!</h3>
+                <p>
+                  Welcome to a hassle-free start! Sign up for free with no
+                  hidden costs or gimmicks. This service is absolutely free and
+                  you will <span>Never</span> be asked for payment! Begin your
+                  journey to a smarter, more efficient e-commerce experience
+                  today. Just a few clicks and you're on board!
+                </p>
+              </div>
             </div>
 
             <div className="step-two step">
-              <h3>Step Two: </h3>
-              <p>
-                LTwom ipsum dolor sit amet consectetur adipisicing elit. Atque
-                consequatur odio veritatis error quam omnis nisi fugit, numquam,
-                rem autem, illo corrupti voluptatum reiciendis modi porro!
-                Voluptates adipisci exercitationem sit.
-              </p>
+              <h4>#2</h4>
+
+              <div className="step-innner">
+                <h3> Set Up Your Store</h3>
+                <p>
+                  It's time to bring your store to the digital forefront. Easily
+                  input your current inventory and sales history. Define your
+                  marketing goals and set the stage for success. With our
+                  intuitive setup, building your online store has never been
+                  easier!
+                </p>
+              </div>
             </div>
 
             <div className="step-three step">
-              <h3>Step Three:</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                consequatur odio veritatis error quam omnis nisi fugit, numquam,
-                rem autem, illo corrupti voluptatum reiciendis modi porro!
-                Voluptates adipisci exercitationem sit.
-              </p>
+              <h4>#3</h4>
+
+              <div className="step-innner">
+                <h3> Monitor Growth and Achieve Goals</h3>
+                <p>
+                  Now, steer your business towards success. Effortlessly monitor
+                  and manage your inventory, track your growth in real-time, and
+                  hit your marketing targets. We provide the tools; you make
+                  them work wonders for your e-commerce venture!
+                </p>
+              </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </>

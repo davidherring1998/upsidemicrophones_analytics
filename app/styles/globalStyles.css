@@ -59,34 +59,24 @@ h3 {
   padding: 0 30px;
 }
 
-@media screen and (min-width: 1700px) {
-  .content {
-    margin-top: -50px;
-  }
-}
-@media screen and (min-width: 1850px) {
-  .content {
-    margin-top: -100px;
-  }
-}
 @media screen and (min-width: 1950px) {
   .content {
-    margin-top: -150px;
+    margin-top: -10px;
   }
 }
 @media screen and (min-width: 2000px) {
   .content {
-    margin-top: -200px;
+    margin-top: -20px;
   }
 }
 @media screen and (min-width: 2150px) {
   .content {
-    margin-top: -250px;
+    margin-top: -50px;
   }
 }
 @media screen and (min-width: 2350px) {
   .content {
-    margin-top: -375px;
+    margin-top: -200px;
   }
 }
 
