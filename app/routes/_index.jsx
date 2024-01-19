@@ -119,8 +119,8 @@ export default function Index() {
         <div className="wrapper-middle">
           <div className="wrapper-sections">
             <div className="header-middle">
-              <span>IT'S TIME TO START THE RIGHT WAY</span>
-              <h2>Revolutionize E-commerce Approach</h2>
+              <span>ENGINEERED FOR GROWTH</span>
+              <h2>Revolutionize Your E-commerce Approach</h2>
             </div>
 
             <div className="sections">

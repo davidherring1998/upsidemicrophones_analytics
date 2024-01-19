@@ -398,7 +398,7 @@ h3 {
 
 .header-middle h2,
 .header-h2 {
-  margin-top: 15px;
+  margin-top: 0px;
   margin-bottom: 15px;
   color: red;
   font-size: 32px;
@@ -407,9 +407,6 @@ h3 {
 /* sections */
 
 .sections {
-  /* display: grid;
-  column-gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -468,7 +465,7 @@ h3 {
 
 /* steps */
 #header-steps h2 {
-  margin-left: 5px;
+  margin: 15px 0 15px 5px;
   text-align: start;
   color: var(--light);
 }
@@ -513,10 +510,13 @@ h3 {
 .step h4 {
   font-size: 40px;
   color: var(--blue);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .step-innner {
   align-items: center;
   justify-content: center;
-  margin-left: 25px;
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
